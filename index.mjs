@@ -9,8 +9,8 @@ const PORT = 5500
 app.use(express.json())
 app.use(cors())
 
+app.use(express.static('static'))
 app.use("/", signup)
-
 app.use("/", users)
 
 app.listen(PORT, () => {
